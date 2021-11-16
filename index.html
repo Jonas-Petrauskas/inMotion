@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>inMotion</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+</head>
+
+<body>
+  <nav class="navigation">
+    <img class="logo" src="#" alt="logo">
+    <ul class="navigation-list">
+      <li><a href="#"></a>HOME</li>
+      <li><a href="#"></a>LISTINGS</li>
+      <li><a href="#"></a>SERVICES</li>
+      <li><a href="#"></a>TEAM</li>
+      <li><a href="#"></a>CONTACT</li>
+      <li><a href="#"></a><img src="#" alt="search"></li>
+    </ul>
+  </nav>
+  <section class="top-section">
+    <div class="top-section__intro">
+      <h1>Creating real value in property place</h1>
+      <button>LEARN MORE</button>
+    </div>
+    <div class="top-section__bottom">
+      <h3>Continious Pursuit of Excellence</h3>
+    </div>
+  </section>
+  <div class="article">
+    <article class="article-container">
+      <p>ABOUT</p>
+      <h3>What We Do</h3>
+      <p>National Apartment Advisors is a full-service brokerage platform built and run
+        by market leaders across the United States. We pride ourselves in helping our
+        clients from acquisition to disposition and through every major capital event.
+      </p>
+      <button><a href="#">READ MORE</a></button>
+    </article>
+  </div>
+  <!--  In this part or section, I will dinamically load information. One layout is enough to load any informaion that is necessary to pass -->
+  <section class="numbers-section">
+    <div class="numbers-section__heading">
+      <p>NUMBERS</p>
+    </div>
+    <div class="numbers-section__details__container">
+      <div class="numbers-section__number">
+        <p>7</p>
+      </div>
+      <div class="numbers-section__info">
+        <p>Offices</p>
+        <p>Cras mattis consectetur purus sit amet fermentum</p>
+      </div>
+    </div>
+  </section>
+  <!-- In this place there should be a line. I will create line using css bottom border property on section -->
+  <!-- Or creating new div that will hold bottom border property -->
+  <section class="properties">
+    <div class="properties-listing">
+      <p>Properties</p>
+      <p>Current Listing</p>
+    </div>
+    <div class="properties-slider">
+      <div>
+        <div>
+          <img src="" alt="">
+        </div>
+        <div>
+          <p>Crossings of Dawsonville</p>
+          <p>Dawsonville, GA</p>
+          <div>
+            <p>Year Built: 2017</p>
+            <p>Avarage SF: 10,000</p>
+            <p>Units: 10</p>
+          </div>
+        </div>
+        <button><a href="#">VIEW ALL</a></button>
+      </div>
+    </div>
+    <section class="request-update">
+      <div>
+        <p>Request Listing Updates</p>
+        <p>Cras mattis consectetur purus sit amet fermentum.
+          Cras mattis consectetur purus sit amet fermentum.</p>
+        <button>SEND REQUEST</button>
+      </div>
+      <div><img src="#" alt="bottom-image"></div>
+    </section>
+    <nav class="bottom-navigation">
+      <ul>
+        <li><a href="#"></a>HOME</li>
+        <li><a href="#"></a>LISTINGS</li>
+        <li><a href="#"></a>SERVICES</li>
+        <li><a href="#"></a>TEAM</li>
+        <li><a href="#"></a>CONTACT</li>
+      </ul>
+      <ul class="social-icons">
+        <li><a href="#"><img src="" alt=""></a></li>
+        <li><a href="#"><img src="" alt=""></a></li>
+        <li><a href="#"><img src="" alt=""></a></li>
+      </ul>
+    </nav>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- implemented slider to check if it's working -->
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('.properties-slider').slick({
+          infinite: true,
+          slideToShow: 3,
+          slideToScroll: 3
+        })
+      })
+    </script>
+</body>
+
+</html>
